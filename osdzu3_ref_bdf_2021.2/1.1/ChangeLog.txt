@@ -1,0 +1,8 @@
+OSDZU3-REF Board Definition Change Log
+***************************************
+V2021.2-1.0 - 01/10/2023 - Initial Release - Vivado Version 2021.2
+V2021.2-1.1 - 10/13/2025 - Update board revision 2A - Vivado Version 2021.2
+    - Change BANK500 voltage configuration to 1.8V
+    - Enable LPDDR2400 mode for DDR interface
+    - Change QSPI mode to x4 Single
+
