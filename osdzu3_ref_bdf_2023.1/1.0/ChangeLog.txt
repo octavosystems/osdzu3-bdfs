@@ -1,0 +1,4 @@
+OSDZU3-REF Board Definition Change Log
+***************************************
+V2021.2-1.0 - 01/10/2023 - Initial Release - Vivado Version 2021.2
+V2023.1-2.0 - 10/10/2023 - Updated Release - Vivado Version 2023.1
