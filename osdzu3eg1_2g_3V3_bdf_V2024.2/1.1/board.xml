@@ -1,0 +1,40 @@
+<board schema_version="2.1" vendor="octavosystems.com" name="osdzu3eg1_2g_3v3_sip" display_name="Octavo OSDZU3EG1-2G 3V3 SiP" url="https://octavosystems.com/octavo_products/osdzu3/" preset_file="preset.xml">
+<images>
+    <image name="osdzu3_sip.jpg" display_name="OSDZU3 SiP" sub_type="board">
+      <description>OSDZU3 SiP Image</description>
+    </image>
+  </images>
+  <compatible_board_revisions>
+    <revision id="0">1.0</revision>
+  </compatible_board_revisions>
+  <file_version>1.1</file_version>
+  <description>Octavo OSDZU3 SiP</description>
+
+  <components>
+    <component name="part0" display_name="Zynq chip in SiP" type="fpga" part_name="xczu3eg-sfvc784-1-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://octavosystems.com/octavo_products/osdzu3/">
+      <description>FPGA part in the SiP</description>
+      <interfaces>
+
+        <interface mode="master" name="ps8_fixedio" type="xilinx.com:zynq_ultra_ps_e:fixedio_rtl:1.0" of_component="ps8_fixedio" preset_proc="zynq_ultra_ps_e_preset"> 
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="zynq_ultra_ps_e" order="0"/>
+          </preferred_ips>
+        </interface>
+      </interfaces>
+    </component>
+
+    <component name="ps8_fixedio" display_name="PS8 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+
+    </components>
+
+  <jtag_chains>
+    <jtag_chain name="chain1">
+      <position name="0" component="part0"/>
+    </jtag_chain>
+  </jtag_chains>
+
+  <connections>
+  </connections>
+
+</board>
+

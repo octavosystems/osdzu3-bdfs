@@ -3,10 +3,9 @@
   <ip_preset preset_proc_name="zynq_ultra_ps_e_preset"> 
     <ip vendor="xilinx.com" library="ip" name="zynq_ultra_ps_e" version="*"> 
       <user_parameters>
-        <user_parameter name="CONFIG.PSU_BANK_0_IO_STANDARD" value="LVCMOS18"/>
+        <user_parameter name="CONFIG.PSU_BANK_0_IO_STANDARD" value="LVCMOS33"/>
         <user_parameter name="CONFIG.PSU_BANK_1_IO_STANDARD" value="LVCMOS18"/>
         <user_parameter name="CONFIG.PSU_BANK_2_IO_STANDARD" value="LVCMOS18"/>
-        <user_parameter name="CONFIG.PSU_BANK_3_IO_STANDARD" value="LVCMOS18"/>
 
         <user_parameter name="CONFIG.PSU__CAN1__PERIPHERAL__ENABLE" value="0"/>
 
@@ -39,7 +38,8 @@
         <user_parameter name="CONFIG.PSU__SD1__DATA_TRANSFER_MODE" value="4Bit"/>
         <user_parameter name="CONFIG.PSU__SD1__PERIPHERAL__IO" value="MIO 46 .. 51"/>
         <user_parameter name="CONFIG.PSU__SD1__SLOT_TYPE" value="SD 2.0"/>
-        <user_parameter name="CONFIG.PSU__SD1__GRP_CD__ENABLE" value="0"/>
+        <user_parameter name="CONFIG.PSU__SD1__GRP_CD__ENABLE" value="1"/>
+        <user_parameter name="CONFIG.PSU__SD1__GRP_CD__IO" value="MIO 45"/>
         <user_parameter name="CONFIG.PSU__SD1__GRP_WP__ENABLE" value="1"/>
         <user_parameter name="CONFIG.PSU__SD1__GRP_WP__IO" value="MIO 44"/>
 
@@ -83,14 +83,14 @@
         <user_parameter name="CONFIG.PSU__DDRC__BUS_WIDTH" value="32 Bit"/>
         <user_parameter name="CONFIG.PSU__DDRC__DRAM_WIDTH" value="32 Bits"/>
         <user_parameter name="CONFIG.PSU__DDRC__MEMORY_TYPE" value="LPDDR 4"/>
-        <user_parameter name="CONFIG.PSU__DDRC__SPEED_BIN" value="LPDDR4_2400"/>
+        <user_parameter name="CONFIG.PSU__DDRC__SPEED_BIN" value="LPDDR4_1066"/>
         <user_parameter name="CONFIG.PSU__DDRC__BANK_ADDR_COUNT" value="3"/>
         <user_parameter name="CONFIG.PSU__DDRC__DEVICE_CAPACITY" value="16384 MBits"/>
         <user_parameter name="CONFIG.PSU__DDRC__RANK_ADDR_COUNT" value="0"/>
         <user_parameter name="CONFIG.PSU__DDRC__ROW_ADDR_COUNT" value="16"/>		
         <user_parameter name="CONFIG.PSU__DDRC__COL_ADDR_COUNT" value="10"/>
-        <user_parameter name="CONFIG.PSU__DDRC__T_RCD" value="21"/>
-        <user_parameter name="CONFIG.PSU__DDRC__T_RP" value="25"/>
+        <user_parameter name="CONFIG.PSU__DDRC__T_RCD" value="10"/>
+        <user_parameter name="CONFIG.PSU__DDRC__T_RP" value="12"/>
         <user_parameter name="CONFIG.PSU__DDRC__T_RC" value="63"/>
         <user_parameter name="CONFIG.PSU__DDRC__T_RAS_MIN" value="42"/>
         <user_parameter name="CONFIG.PSU__DDRC__T_FAW" value="40.0"/>
@@ -126,7 +126,7 @@
         <user_parameter name="CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL" value="IOPLL"/>
         <user_parameter name="CONFIG.PSU__CRL_APB__CPU_R5_CTRL__FREQMHZ" value="500"/>
         <user_parameter name="CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__SRCSEL" value="IOPLL"/>
-        <user_parameter name="CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__FREQMHZ" value="100"/>
+        <user_parameter name="CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__FREQMHZ" value="125"/>
         <user_parameter name="CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__SRCSEL" value="RPLL"/>
         <user_parameter name="CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__FREQMHZ" value="200"/>
         <user_parameter name="CONFIG.PSU__CRL_APB__UART0_REF_CTRL__SRCSEL" value="IOPLL"/>
@@ -165,7 +165,6 @@
         <user_parameter name="CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL" value="IOPLL"/>
         <user_parameter name="CONFIG.PSU__CRF_APB__GPU_REF_CTRL__FREQMHZ" value="500"/>
         <user_parameter name="CONFIG.PSU__CRF_APB__DDR_CTRL__SRCSEL" value="DPLL"/>
-        <user_parameter name="CONFIG.PSU__CRF_APB__DDR_CTRL__FREQMHZ" value="1199.988037"/>
         <user_parameter name="CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__SRCSEL" value="VPLL"/>
         <user_parameter name="CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__SRCSEL" value="RPLL"/>
         <user_parameter name="CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__SRCSEL" value="RPLL"/>
